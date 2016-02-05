@@ -134,6 +134,22 @@ $ scala -cp classes HelloWorld
 Hello, world!
 ```
 
+#Traits
+* Something like modules in Ruby
+* In this case ``App`` is the trait
+* [The App trait can be used to quickly turn objects into executable programs](http://www.scala-lang.org/api/2.10.1/index.html#scala.App)
+``HelloWorldApp.scala``
+```
+object HelloWorldApp extends App {
+  println("Hello, world! (App)")
+}
+```
+
+```
+$ scalac -d classes HelloWorldApp.scala
+$ scala -cp classes HelloWorldApp
+Hello, world! (App)
+```
 
 #Resources
 * [Programming in Scala, First Edition](http://www.artima.com/pins1ed/)
